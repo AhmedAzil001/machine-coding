@@ -1,3 +1,6 @@
+# Dynamic Accordian 
+- user can open one accordian at a time and the rest will be closed
+
 # Controlled Component 
 - a component whose rendering is dependent on parent
 - Accordian.jsx is a controlled component 
