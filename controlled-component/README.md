@@ -1,8 +1,9 @@
-# React + Vite
+# Controlled Component 
+- a component whose rendering is dependent on parent
+- Accordian.jsx is a controlled component 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Lifitng the state up
+- when a same state is given to multiple element or component it becomes difficult to change the state of 2 or more component at the same time 
+- To solve this we use lifting up the state concept where parents controls the state of each component
+- Here the App is controlling the Accordian and giting it a isActive state to all components but for selected component its true and for rest its false, in this way at the same time we change the state of multiple components which is not possible if we have a diff state for each component that is at a time only state of component can be changed.
+- its is possible to have a above by giving diff state to all component but it will become complicated and result in multiple re-render which slows down our app.
