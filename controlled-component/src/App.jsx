@@ -23,7 +23,7 @@ function App() {
   const [activeIndex, setActiveIndex] = useState(null);
   return (
     <div className="w-full h-[100vh] flex justify-center items-center font-sans">
-      <div className="w-[30%] flex items-center flex-col p-4 rounded-sm border-2">
+      <div className="w-[100%] md:w-[30%] flex items-center flex-col p-4 rounded-sm border-2">
         {data.map((val, index) => (
           <Accordian
             key={val.id}
