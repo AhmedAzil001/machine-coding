@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div className='flex justify-center items-center pt-24 flex-col gap-2'>
+      <div className='flex justify-center items-center pt-24 flex-col gap-2 '>
         {
           data.map(item => <Accordian key={item.id} title={item.title} description={item.description}/>)
         }
